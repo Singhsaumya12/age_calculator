@@ -1,0 +1,143 @@
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Dancing Script", cursive;
+   font-weight: 700;
+   font-size: 70px;
+   text-align: center;
+}
+.container {
+   width: 100%;
+   min-height: 100vh;
+   background-image: url(image/wp3166483-wallpaper-hd-vintage.jpg);
+   background-size: cover;
+   color: white;
+   display: flex;
+   justify-content: flex-end; /* Align container to the right */
+   align-items: center;
+   padding: 20px;
+}
+
+.calculator-box {
+   width: 100%;
+   max-width: 600px;
+   padding: 20px;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   text-align: center;
+}
+.container h1 {
+   background-size: 20px;
+   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+   padding: 10px 10px;
+}
+
+.container .input-box {
+   font-size: 25px;
+}
+.input-box {
+   margin: 10px 0;
+   padding: 35px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.3);
+   display: inline-flex;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.input-box input {
+   margin-right: 20px;
+   padding: 14px 20px;
+   border: 10px;
+   outline: 0;
+   font-size: 30px;
+   border-radius: 5px;
+   position: relative;
+   z-index: 1;
+}
+
+.input-box input:focus + .input-box {
+   z-index: 0;
+}
+
+.input-box button {
+   background: rgb(198, 139, 56);
+   border: 0;
+   outline: 0;
+   padding: 15px 30px;
+   border-radius: 5px;
+   font-weight: 500;
+   cursor: pointer;
+   font-size: 30px;
+}
+#result {
+   color: white;
+   font-size: 30px;
+   font-weight: 400;
+   margin-top: 20px;
+}
+
+#result span {
+   color: yellow;
+   font-size: 30px;
+   font-weight: 600;
+}
+
+
+@media (max-width: 1200px) {
+   * {
+      font-size: 60px;
+   }
+   .input-box input, .input-box button {
+      font-size: 25px;
+      padding: 12px 20px;
+   }
+   #result {
+      font-size: 25px;
+   }
+}
+
+@media (max-width: 992px) {
+   * {
+      font-size: 50px;
+   }
+   .input-box {
+      flex-direction: column;
+   }
+   .input-box input, .input-box button {
+      font-size: 22px;
+      padding: 10px 15px;
+   }
+   #result {
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 768px) {
+   * {
+      font-size: 40px;
+   }
+   .input-box input, .input-box button {
+      font-size: 20px;
+      padding: 8px 12px;
+   }
+   #result {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 576px) {
+   * {
+      font-size: 30px;
+   }
+   .input-box input, .input-box button {
+      font-size: 18px;
+      padding: 6px 10px;
+   }
+   #result {
+      font-size: 18px;
+   }
+}
